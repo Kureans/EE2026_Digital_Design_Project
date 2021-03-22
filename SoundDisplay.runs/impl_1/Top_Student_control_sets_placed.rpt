@@ -1,0 +1,96 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Mar 22 16:41:04 2021
+| Host         : DESKTOP-DKSSV9Q running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    28 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      4 |            5 |
+|      8 |            1 |
+|     14 |            2 |
+|    16+ |           17 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             176 |           39 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             556 |           80 |
+| Yes          | No                    | No                     |              78 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             146 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+-----------------------------------------+---------------------------------------------+------------------+----------------+
+|               Clock Signal               |              Enable Signal              |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++------------------------------------------+-----------------------------------------+---------------------------------------------+------------------+----------------+
+|  sixp25clk                               | border_1_IBUF                           | border_3_IBUF                               |                1 |              2 |
+|  sixp25clk                               | theme_og_IBUF                           | theme_nus_IBUF                              |                1 |              2 |
+| ~sixp25clk                               |                                         |                                             |                1 |              2 |
+|  bar/pulse_left/unitx/new_clock          |                                         |                                             |                1 |              4 |
+|  bar/pulse_right/unitx/new_clock         |                                         |                                             |                1 |              4 |
+|  sixp25clk                               |                                         |                                             |                2 |              4 |
+|  bar/pulse/unitx/new_clock               |                                         |                                             |                1 |              4 |
+|  bar/pulse_down/unitx/new_clock          |                                         |                                             |                1 |              4 |
+|  sixp25clk                               | bar/x_right                             |                                             |                1 |              8 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | task2a_instance/seg_reg[6]_i_1_n_0      |                                             |                2 |             14 |
+|  sixp25clk                               | bar/myOled/E[0]                         |                                             |                2 |             14 |
+|  CLOCK_IBUF_BUFG                         |                                         | J_MIC3_Pin1_OBUF_BUFG                       |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                         | task2a_instance/peak_volume_display_0       |                4 |             24 |
+| ~task2a_instance/audio_cap/temp_reg[0]_0 |                                         |                                             |                3 |             24 |
+| ~sixp25clk                               |                                         | bar/pulse/unit0/my_sp                       |                5 |             34 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | task2a_instance/audio_cap/E[0]          | task2a_instance/peak_volume_display_0       |                5 |             38 |
+| ~sixp25clk                               | bar/myOled/delay_reg[19]_0              | bar/pulse/unit0/my_sp                       |                5 |             40 |
+|  J_MIC3_Pin1_OBUF_BUFG                   | task2a_instance/peak_volume_display_0   |                                             |                7 |             42 |
+|  CLOCK_IBUF_BUFG                         |                                         | bar/pulse_left/unitx/clear                  |                8 |             64 |
+|  CLOCK_IBUF_BUFG                         |                                         | bar/pulse_right/unitx/clear                 |                8 |             64 |
+|  CLOCK_IBUF_BUFG                         |                                         | bar/pulse/unitx/clear                       |                8 |             64 |
+|  CLOCK_IBUF_BUFG                         |                                         | bar/pulse_down/unitx/clear                  |                8 |             64 |
+|  CLOCK_IBUF_BUFG                         |                                         | task2a_instance/clk_20khz/clear             |                8 |             64 |
+|  CLOCK_IBUF_BUFG                         |                                         | bar/sixp25mhz/clear                         |                8 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG                   |                                         |                                             |               10 |             64 |
+| ~sixp25clk                               | bar/myOled/FSM_onehot_state[31]_i_2_n_0 | bar/pulse/unit0/my_sp                       |                9 |             64 |
+|  CLOCK_IBUF_BUFG                         |                                         |                                             |               19 |             66 |
+| ~sixp25clk                               |                                         | bar/pulse/unit1/spi_word_bit_count_reg[5]_0 |               20 |             90 |
++------------------------------------------+-----------------------------------------+---------------------------------------------+------------------+----------------+
+
+
