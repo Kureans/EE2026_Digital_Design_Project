@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 24 13:27:08 2021
+# Process ID: 6512
+# Current directory: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4772 C:\Users\ZZ\Desktop\EE2026_Digital_Design_Project\SoundDisplay.xpr
+# Log file: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/vivado.log
+# Journal file: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ZZ/2026labs/SoundDisplay' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 780.262 ; gain = 79.363
+update_compile_order -fileset sources_1
+close_project
+create_project project-test C:/Users/ZZ/Desktop/project-test -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+file mkdir C:/Users/ZZ/Desktop/project-test/project-test.srcs/sources_1/new
+close [ open C:/Users/ZZ/Desktop/project-test/project-test.srcs/sources_1/new/test.v w ]
+add_files C:/Users/ZZ/Desktop/project-test/project-test.srcs/sources_1/new/test.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/ZZ/Desktop/project-test/project-test.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/ZZ/Desktop/project-test/project-test.srcs/sim_1/new/random_simul.v w ]
+add_files -fileset sim_1 C:/Users/ZZ/Desktop/project-test/project-test.srcs/sim_1/new/random_simul.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 24 13:44:31 2021...

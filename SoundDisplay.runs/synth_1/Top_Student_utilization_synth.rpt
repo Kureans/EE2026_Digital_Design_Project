@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Mar 22 16:39:54 2021
+| Date         : Thu Mar 25 00:37:35 2021
 | Host         : DESKTOP-DKSSV9Q running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
 | Design       : Top_Student
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  528 |     0 |     20800 |  2.54 |
-|   LUT as Logic          |  528 |     0 |     20800 |  2.54 |
+| Slice LUTs*             | 2292 |     0 |     20800 | 11.02 |
+|   LUT as Logic          | 2292 |     0 |     20800 | 11.02 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  478 |     0 |     41600 |  1.15 |
-|   Register as Flip Flop |  478 |     0 |     41600 |  1.15 |
+| Slice Registers         |  545 |     0 |     41600 |  1.31 |
+|   Register as Flip Flop |  545 |     0 |     41600 |  1.31 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                |    1 |     0 |     16300 | <0.01 |
+| F7 Muxes                |    3 |     0 |     16300 |  0.02 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
+| 13    |          Yes |           - |        Reset |
 | 1     |          Yes |         Set |            - |
-| 477   |          Yes |       Reset |            - |
+| 531   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -115,7 +115,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    3 |     0 |        32 |  9.38 |
+| BUFGCTRL   |    4 |     0 |        32 | 12.50 |
 | BUFIO      |    0 |     0 |        20 |  0.00 |
 | MMCME2_ADV |    0 |     0 |         5 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |         5 |  0.00 |
@@ -149,19 +149,20 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  477 |        Flop & Latch |
-| LUT6     |  240 |                 LUT |
-| LUT3     |  113 |                 LUT |
-| LUT2     |  105 |                 LUT |
-| LUT5     |   96 |                 LUT |
-| CARRY4   |   84 |          CarryLogic |
-| LUT4     |   70 |                 LUT |
+| LUT6     | 1089 |                 LUT |
+| FDRE     |  531 |        Flop & Latch |
+| LUT3     |  471 |                 LUT |
+| CARRY4   |  464 |          CarryLogic |
+| LUT4     |  418 |                 LUT |
+| LUT5     |  358 |                 LUT |
+| LUT2     |  253 |                 LUT |
+| LUT1     |   54 |                 LUT |
 | OBUF     |   36 |                  IO |
-| LUT1     |   29 |                 LUT |
 | IBUF     |   14 |                  IO |
-| BUFG     |    3 |               Clock |
+| FDCE     |   13 |        Flop & Latch |
+| BUFG     |    4 |               Clock |
+| MUXF7    |    3 |               MuxFx |
 | OBUFT    |    1 |                  IO |
-| MUXF7    |    1 |               MuxFx |
 | FDSE     |    1 |        Flop & Latch |
 +----------+------+---------------------+
 

@@ -30,7 +30,7 @@ module Top_Student (
     );
     
     //audio task2a 
-    wire [11:0] mic_in_oled;
+    wire [11:0] mic_in;
     wire [3:0] an_reg;
     wire [6:0] seg_reg; 
     wire [15:0] led_reg; 
@@ -43,23 +43,38 @@ module Top_Student (
                 J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
                 J_MIC3_Pin4,    // Connect to this signal from Audio_Capture.v
                 CLOCK, sw0, sw_mic_peak,
-                mic_in_oled,
+                mic_in,
                 an_reg, seg_reg, led_reg, led_reg_peak_display,
                 
                 peak_volume_display //link to volume bar
         );
+        ////////////////////////////////////////////////////////////////////
         
-    
+         wire clk_20k;
+          clock_divider clk_20khz (CLOCK, 2499, clk_20k);
+          wire [2:0] FREQ_RANGE;
+          wire [15:0] SOUNDFREQ;
+          wire [6:0] seg_reg_freq;
+          wire [3:0] an_reg_freq;
+       
+       
+           audio_freq(.CLK(clk_20k), .MIC_IN(mic_in), .M(3999), .FREQ_RANGE(FREQ_RANGE), .SOUNDFREQ(SOUNDFREQ),
+                       .seg_reg(seg_reg_freq), .an_reg(an_reg_freq)
+           );
+
+    ///////////////////////////////////////////////////////////////////
     
      always @ (posedge CLOCK)
         begin
-            led <= (sw0) ?  led_reg_peak_display : led_reg;
-            seg <= seg_reg;
-            an <= an_reg;   //////////////////////
+            //led <= (sw0) ?  led_reg_peak_display : led_reg;
+            led <= (sw0) ? SOUNDFREQ : 0;
+            //seg <= seg_reg;
+            seg <= seg_reg_freq;
+            //an <= an_reg;   //////////////////////
+            an <= an_reg_freq;
         end
         
     //task2b
-    
     
         wire my_fb,send_pix, my_sp, sp_left, sp_right, sp_down, my_samp_pix, my_test_state;
         wire [12:0] my_pix_index;
@@ -72,13 +87,15 @@ module Top_Student (
         reg [6:0] x_left = 7'd37;
         reg [6:0] x_right = 7'd57;
         
-        wire clk_20k;
         wire sixp25clk;
      
-        volume_bar bar (mic_in_oled, peak_volume_display, CLOCK, BTNC, BTNL, BTNR, BTND, theme_og, theme_nus, 
+        volume_bar bar (mic_in, peak_volume_display, CLOCK, BTNC, BTNL, BTNR, BTND, theme_og, theme_nus, 
                         border_1, border_3, border_on, volume_on, sw_mic_peak, JB
                         );
 
+  
+
+    
 
     
 endmodule

@@ -1,0 +1,1830 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 6468
+License: Customer
+
+Current time: 	Wed Mar 24 20:43:30 SGT 2021
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1097x617
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 31 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	ZZ
+User home directory: C:/Users/ZZ
+User working directory: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project
+User country: 	SG
+User language: 	en
+User locale: 	en_SG
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/ZZ/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/ZZ/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/ZZ/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/vivado.log
+Vivado journal file location: 	C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/vivado.jou
+Engine tmp dir: 	C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/.Xil/Vivado-6468-DESKTOP-DKSSV9Q
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	203 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 496 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 56 MB (+56645kb) [00:00:12]
+// [Engine Memory]: 477 MB (+349202kb) [00:00:12]
+// Opening Vivado Project: C:\Users\ZZ\Desktop\EE2026_Digital_Design_Project\SoundDisplay.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/ZZ/2026labs/SoundDisplay' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 496 MB. GUI used memory: 30 MB. Current time: 3/24/21 8:43:33 PM SGT
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 548 MB (+48426kb) [00:00:20]
+// [Engine Memory]: 595 MB (+20782kb) [00:00:24]
+// Tcl Message: open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:13 . Memory (MB): peak = 831.219 ; gain = 102.352 
+// Project name: SoundDisplay; location: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bx (ck)
+// [GUI Memory]: 61 MB (+1679kb) [00:00:27]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+// PAPropertyPanels.initPanels (Top_Student.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 65 MB (+641kb) [00:01:25]
+// [GUI Memory]: 69 MB (+819kb) [00:01:50]
+// Elapsed time: 658 seconds
+selectCodeEditor("Top_Student.v", 159, 108); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 159, 108); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 159, 108, false, false, false, false, true); // ce (w, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "audio_freq"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 8 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.srcs/sources_1/new/audio_freq.v w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.srcs/sources_1/new/audio_freq.v 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (ck)
+// [GUI Memory]: 72 MB (+400kb) [00:11:52]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_freq (audio_freq.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_freq (audio_freq.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_freq (audio_freq.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("audio_freq.v", 262, 128); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 71, 271); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 76, 267); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 128, 216); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 66, 151); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 115, 107); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// [GUI Memory]: 79 MB (+2866kb) [00:12:35]
+// Elapsed time: 21 seconds
+selectCodeEditor("Top_Student.v", 105, 187); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 130, 224); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Student.v", 101, 219); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 262, 227); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 166, 214); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 166, 214, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("Top_Student.v", 121, 57); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 121, 57, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 12 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), sound_freq : xil_defaultlib.sound_freq]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), sound_freq : xil_defaultlib.sound_freq]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_freq (audio_freq.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, audio_freq (audio_freq.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), sound_freq : xil_defaultlib.sound_freq]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), sound_freq : xil_defaultlib.sound_freq]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Top_Student.v", 66, 161); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 88, 149); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("Top_Student.v", 87, 172); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), bar : volume_bar (task_2b.v)]", 3); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), bar : volume_bar (task_2b.v)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), task2a_instance : task_2a (task_2a.v)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), task2a_instance : task_2a (task_2a.v), clk_20khz : clock_divider (clock_divider.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), task2a_instance : task_2a (task_2a.v), clk_20khz : clock_divider (clock_divider.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("clock_divider.v", 99, 177); // ce (w, ck)
+selectCodeEditor("clock_divider.v", 99, 177, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), task2a_instance : task_2a (task_2a.v), audio_cap : Audio_Capture (Audio_Capture.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), task2a_instance : task_2a (task_2a.v), audio_cap : Audio_Capture (Audio_Capture.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // aw
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), task2a_instance : task_2a (task_2a.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), task2a_instance : task_2a (task_2a.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectCodeEditor("task_2a.v", 180, 99); // ce (w, ck)
+selectCodeEditor("task_2a.v", 180, 99, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("task_2a.v", 179, 82); // ce (w, ck)
+selectCodeEditor("task_2a.v", 179, 82, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("task_2a.v", 179, 82); // ce (w, ck)
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Audio_Capture.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 3); // k (j, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("clock_divider.v", 246, 132); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 214, 187); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 59, 199); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 59, 199, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 59, 199); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 141, 122); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 47, 128); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 84 MB (+1836kb) [00:16:08]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 116, 13); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 116, 13, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 116, 13); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 157, 11); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 134, 58); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 134, 58, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 134, 58); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 358, 163); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 76, 179); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 265, 180); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 97, 184); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 97, 184, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 97, 184); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 95, 179); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 95, 179, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 95, 179); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 115, 146); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 184, 174); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 226, 219); // ce (w, ck)
+// [GUI Memory]: 92 MB (+3731kb) [00:16:34]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 147, 236); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 162, 230); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 162, 230, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 282, 224); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 282, 224, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("Top_Student.v", 179, 148); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 179, 148, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Audio_Capture.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 3); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 4); // k (j, ck)
+selectCodeEditor("task_2a.v", 173, 79); // ce (w, ck)
+selectCodeEditor("task_2a.v", 173, 79, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mic_in_oled"); // l (aQ, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 157, 157); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 191, 138); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 295, 139); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mic_in"); // l (aQ, ck)
+selectCodeEditor("Top_Student.v", 179, 25); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 180, 191); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 242, 144); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 239, 140); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 271, 130); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 271, 130, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 307, 126); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 330, 126); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("Top_Student.v", 131, 151); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 583, 118); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 326, 126); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 484, 128); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 484, 128, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 35 seconds
+selectCodeEditor("Top_Student.v", 421, 76); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 421, 76); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 53, 94); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 48, 95); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 198, 158); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 184, 150); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 167, 148); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 163, 126); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 484, 163); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 98 MB (+1307kb) [00:19:45]
+// Elapsed time: 22 seconds
+selectCodeEditor("Top_Student.v", 186, 163); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 195, 143); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 356, 122); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 356, 122, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 356, 122); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 350, 139); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 331, 150); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 2); // k (j, ck)
+selectCodeEditor("audio_freq.v", 227, 137); // ce (w, ck)
+// Elapsed time: 13 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "M"); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "M"); // l (aQ, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "M"); // l (aQ, ck)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+selectCodeEditor("Top_Student.v", 239, 162); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 239, 159); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 238, 154); // ce (w, ck)
+// Elapsed time: 266 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 2); // k (j, ck)
+// Elapsed time: 71 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 1); // k (j, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("Top_Student.v", 82, 125); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 450, 127); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("Top_Student.v", 234, 77); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 17, 58); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 14, 21); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 168, 176); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 154, 99); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 108, 98); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 92, 157); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("Top_Student.v", 251, 92); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectCodeEditor("Top_Student.v", 149, 109); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// [GUI Memory]: 104 MB (+461kb) [00:28:49]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 24 21:12:06 2021] Launched synth_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/synth_1/runme.log [Wed Mar 24 21:12:06 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 2); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 354ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 595 MB. GUI used memory: 42 MB. Current time: 3/24/21 9:13:33 PM SGT
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 273 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (task_2a.v) elapsed time: 0.2s
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 868.719 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714141A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,144 MB. GUI used memory: 47 MB. Current time: 3/24/21 9:17:18 PM SGT
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 437ms to process. Increasing delay to 3000 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,146 MB (+546378kb) [00:34:02]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// Elapsed time: 11 seconds
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 217 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false, false, false, false, true, false); // u (O, ck) - Popup Trigger
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714141A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 46 MB. Current time: 3/24/21 9:47:19 PM SGT
+// Elapsed time: 2661 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_Student.v", 171, 77); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 123, 78); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 358, 81); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 84, 75); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 553, 78); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("Top_Student.v", 126, 100); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Student.v", 250, 146); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 28 seconds
+selectCodeEditor("audio_freq.v", 262, 100); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+// Elapsed time: 260 seconds
+selectCodeEditor("audio_freq.v", 133, 159); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 133, 159, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("task_2a.v", 30, 45); // ce (w, ck)
+selectCodeEditor("task_2a.v", 28, 30); // ce (w, ck)
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 184, 54); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 242, 217); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 242, 198); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 222, 154); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 31, 134); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 35, 125); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 169, 126); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 58, 131); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("audio_freq.v", 216, 107); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 189, 163); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("audio_freq.v", 73, 75); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("audio_freq.v", 225, 85); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("audio_freq.v", 169, 77); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 169, 77, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 169, 77); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 260, 39); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 300, 75); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 308, 88); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 143, 39); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("audio_freq.v", 177, 81); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 172, 92); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 172, 92, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 172, 92); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 151, 83); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("audio_freq.v", 93, 73); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+selectCodeEditor("task_2a.v", 155, 188); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 197, 54); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("audio_freq.v", 103, 127); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 110, 86); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 25 seconds
+selectCodeEditor("audio_freq.v", 56, 139); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 69, 147); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 44 MB. Current time: 3/24/21 10:17:19 PM SGT
+// Elapsed time: 21 seconds
+selectCodeEditor("audio_freq.v", 117, 146); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 117, 146, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 469, 107); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("audio_freq.v", 182, 141); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 189, 125); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("audio_freq.v", 76, 167); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 76, 167, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 163, 106); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 163, 106, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 95, 172); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 95, 172, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 162, 85); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 17, 101); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 109, 135); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 16, 64); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("clock_divider.v", 134, 81); // ce (w, ck)
+selectCodeEditor("clock_divider.v", 134, 81, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("task_2a.v", 121, 215); // ce (w, ck)
+selectCodeEditor("task_2a.v", 121, 215, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("task_2a.v", 121, 215); // ce (w, ck)
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 204, 134); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 57, 159); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 198, 163); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 198, 163, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 209, 107); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 209, 107, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 234, 93); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_freq.v", 83, 147); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("audio_freq.v", 185, 162); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 28, 167); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 197, 187); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 159, 62); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 175, 124); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 163, 165); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 163, 165, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("audio_freq.v", 70, 131); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 159, 157); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 72, 35); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 72, 35, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 72, 35); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 72, 35); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 67, 35); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 67, 35, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 67, 35); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 285, 132); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("audio_freq.v", 147, 41); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 73, 49); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 16 seconds
+selectCodeEditor("audio_freq.v", 167, 57); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 141, 49); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 209, 43); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 147, 62); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 162, 78); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 94); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("audio_freq.v", 168, 113); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 152, 114); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 163, 110); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 163, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("audio_freq.v", 123, 127); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 123, 127, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 92 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+selectCodeEditor("task_2a.v", 341, 37); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "anode"); // l (aQ, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 189, 58); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+selectCodeEditor("task_2a.v", 176, 145); // ce (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "20"); // l (aQ, ck)
+selectCodeEditor("task_2a.v", 150, 159); // ce (w, ck)
+selectCodeEditor("task_2a.v", 150, 159, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("task_2a.v", 150, 159); // ce (w, ck)
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 162, 129); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 162, 129, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 162, 129); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 83, 113); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 83, 113, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_freq.v", 265, 146); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 228, 168); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 211, 127); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 211, 127, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_freq.v", 183, 162); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 183, 162, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("audio_freq.v", 208, 133); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("audio_freq.v", 215, 89, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("audio_freq.v", 190, 84); // ce (w, ck)
+// Elapsed time: 36 seconds
+selectCodeEditor("audio_freq.v", 239, 84); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 227, 93); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 170, 105); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 382, 191); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 348, 111); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("audio_freq.v", 169, 145); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 96, 161); // ce (w, ck)
+// Elapsed time: 95 seconds
+selectCodeEditor("audio_freq.v", 184, 141); // ce (w, ck)
+// Elapsed time: 99 seconds
+selectCodeEditor("audio_freq.v", 194, 159); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 191, 158); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 146, 161); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("audio_freq.v", 187, 181); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 204, 217); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 197, 199); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("audio_freq.v", 224, 181); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 99, 194); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("audio_freq.v", 199, 107); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 338, 133); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 337, 138); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 80, 141); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 159, 97); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 89, 72); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 89, 167); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 161, 181); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 91, 145); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 161, 164); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_freq.v", 197, 173); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 42 seconds
+selectCodeEditor("audio_freq.v", 357, 99); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 33 seconds
+selectCodeEditor("audio_freq.v", 356, 132); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectCodeEditor("audio_freq.v", 203, 165); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 193, 78); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("audio_freq.v", 211, 175); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 223, 194); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 223, 194, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 223, 194); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 175, 183); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 175, 183, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 174, 187); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_Student.v", 190, 97); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 82, 95); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 85, 94); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 182, 109); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 182, 109); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 182, 109, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("Top_Student.v", 289, 67); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 71, 80); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("Top_Student.v", 281, 70); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 66, 92); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectCodeEditor("Top_Student.v", 689, 145); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 303, 158); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 298, 165); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 292, 163); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 176, 168); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("Top_Student.v", 229, 90); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 153, 187); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 168, 175); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 157, 165); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("Top_Student.v", 131, 181); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 694, 142); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("Top_Student.v", 338, 161); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("Top_Student.v", 196, 119); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 235, 110); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 259, 98); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("audio_freq.v", 235, 226); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 229, 43); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 28 seconds
+selectCodeEditor("audio_freq.v", 263, 114); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 263, 114, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 263, 114); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 206, 46); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 206, 46, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 206, 46); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 203, 74); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 203, 74, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 203, 74); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 231, 110); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 231, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 231, 110); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("audio_freq.v", 85, 94); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_freq.v", 83, 147); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 24 22:38:06 2021] Launched synth_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/synth_1/runme.log [Wed Mar 24 22:38:06 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 14 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// [GUI Memory]: 109 MB (+663kb) [01:55:14]
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 24 22:38:31 2021] Launched synth_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/synth_1/runme.log [Wed Mar 24 22:38:31 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 288ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 243 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714141A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("audio_freq.v", 293, 166); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+// Elapsed time: 52 seconds
+selectCodeEditor("audio_freq.v", 260, 77); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 246, 76); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 246, 76, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 255, 91); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 255, 91, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 256, 110); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 256, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 251, 130); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 251, 130, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 253, 153); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 253, 153, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 253, 148); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 253, 148, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 250, 161); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 250, 161, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 251, 182); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 251, 182, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 252, 195); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 252, 195, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 249, 215); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 249, 215, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 269, 94); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 269, 94, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 271, 91); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_freq.v", 277, 90); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 277, 90, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 271, 97); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 271, 97, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 255, 111); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 255, 111, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 254, 131); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 254, 131, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 251, 143); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 251, 143, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 164); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 164, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 180); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 180, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 194); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 194, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 209); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 209, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 234); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 234, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 243); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 248, 243, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 266, 181); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 266, 181, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 267, 180); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("audio_freq.v", 267, 180); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 267, 180, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 279, 194); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 279, 194, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 280, 217); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 280, 217, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 279, 230); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 279, 230, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 277, 250); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 277, 250, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 278, 162); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 278, 162, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 281, 181); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("audio_freq.v", 280, 182); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 280, 182, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 281, 197); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 281, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 281, 213); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 281, 213, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 280, 228); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 280, 228, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 100 seconds
+selectCodeEditor("audio_freq.v", 167, 153); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Mar 24 22:47:04 2021] Launched synth_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/synth_1/runme.log [Wed Mar 24 22:47:04 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 61 MB. Current time: 3/24/21 10:47:19 PM SGT
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 226ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 318 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+selectCodeEditor("task_2a.v", 271, 147); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("task_2a.v", 262, 164); // ce (w, ck)
+selectCodeEditor("task_2a.v", 262, 164, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "task_2a.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 241, 97); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 241, 97, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+selectCodeEditor("task_2a.v", 271, 159); // ce (w, ck)
+selectCodeEditor("task_2a.v", 271, 159, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 185, 29); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 190, 35); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 190, 35, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 190, 35); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 208, 69); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 144, 45); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 144, 45, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 199, 43); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 199, 43, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 369, 47); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 369, 47, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 519, 65); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 283, 47); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 283, 47, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 283, 47); // ce (w, ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714141A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 577 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 577 ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 46 MB. Current time: 3/24/21 11:17:20 PM SGT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 44 MB. Current time: 3/24/21 11:47:20 PM SGT
+// Elapsed time: 4358 seconds
+selectCodeEditor("audio_freq.v", 189, 177); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 212ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Mar 25 00:08:32 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("audio_freq.v", 23, 95); // ce (w, ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "task_2a.v", 3); // k (j, ck)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "clock_divider.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 171, 109); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 275 seconds
+selectCodeEditor("audio_freq.v", 339, 125); // ce (w, ck)
+// Elapsed time: 24 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714141A 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (bB)
+dismissDialog("Program Device"); // bB (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Mar 25 00:14:53 2021] Launched synth_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/synth_1/runme.log [Thu Mar 25 00:14:53 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectCodeEditor("audio_freq.v", 312, 66); // ce (w, ck)
+// Elapsed time: 31 seconds
+selectCodeEditor("audio_freq.v", 335, 119); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 375, 89); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 271, 109); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 218ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 45 MB. Current time: 3/25/21 12:17:21 AM SGT
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 179 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 48 seconds
+selectCodeEditor("audio_freq.v", 196, 173); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 122, 45); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 122, 45, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 122, 45); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 447, 126); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 137, 144); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 320, 82); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("audio_freq.v", 301, 56); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("audio_freq.v", 229, 147); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("audio_freq.v", 149, 152); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 149, 152, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 149, 152); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 148, 30); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 143, 22); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 126, 37); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 39 seconds
+selectCodeEditor("audio_freq.v", 254, 93); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 254, 93, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 0); // k (j, ck)
+selectCodeEditor("Top_Student.v", 206, 165); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 206, 165, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("audio_freq.v", 181, 121); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 181, 121, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 213, 124); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 48, 149); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 48, 149, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 48, 149); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 48, 149); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 42, 155); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 42, 155, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 42, 155); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 126, 124); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 67, 69); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 67, 69, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 67, 69); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 233, 94); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 233, 94, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 233, 94); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 127, 105); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 112, 124); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 61, 111); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 136, 22); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 136, 22, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 136, 22); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 212, 181); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("audio_freq.v", 33, 80); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 59, 49); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 123, 203); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 129, 216); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 77, 198); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("audio_freq.v", 87, 116); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("audio_freq.v", 80, 146); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("audio_freq.v", 40, 181); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 40, 181, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 89, 158); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 89, 158, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 100, 150); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // aw
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (ck): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (ck)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)
+selectCodeEditor("audio_freq.v", 168, 149); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Mar 25 00:24:17 2021] Launched synth_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/synth_1/runme.log [Thu Mar 25 00:24:17 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 211ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 228 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183714141A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 273 seconds
+selectCodeEditor("Top_Student.v", 169, 45); // ce (w, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // L (Q, ck)
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "audio_freq.v", 1); // k (j, ck)
+selectCodeEditor("audio_freq.v", 385, 183); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("audio_freq.v", 250, 80); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("audio_freq.v", 209, 56); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 180, 203); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 177, 202, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 177, 202); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 182, 199); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 182, 199); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 187, 198); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 197, 196); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 225, 57); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 261, 60); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 183, 162); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 183, 162, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 216, 114); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 210, 116); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 210, 116, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("audio_freq.v", 214, 114); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 222, 112); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 150, 113); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 148, 114); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 171, 224); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 172, 229); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 172, 229, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 233, 112); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 273, 114); // ce (w, ck)
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 182, 93); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 182, 93, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("audio_freq.v", 135, 93); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 229, 132); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("audio_freq.v", 279, 145); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 285, 159); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 285, 159, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'c'); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 271, 143); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 271, 143, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "audio_freq.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("audio_freq.v", 115, 147); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("audio_freq.v", 323, 142); // ce (w, ck)
+selectCodeEditor("audio_freq.v", 152, 123); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Mar 25 00:35:47 2021] Launched synth_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/synth_1/runme.log [Thu Mar 25 00:35:47 2021] Launched impl_1... Run output will be captured here: C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 425ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 277 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/ZZ/Desktop/EE2026_Digital_Design_Project/SoundDisplay.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183714141A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 46 MB. Current time: 3/25/21 12:47:21 AM SGT
