@@ -1,8 +1,7 @@
 
-module volume_bar(input [11:0] mic_in, input [3:0] peak_volume, input [12:0] my_pix_index, input CLOCK, input BTNC, BTNL, BTNR, BTND, theme_swap, border_swap, border_on, volume_on, sw_mic_peak, 
+module volume_bar(input [11:0] mic_in, input [3:0] peak_volume, input [12:0] my_pix_index, input CLOCK, input my_sp, sp_left, sp_right, sp_down, theme_swap, border_swap, border_on, volume_on, sw_mic_peak, 
 output reg [15:0] volume_bar_data);
  
-    wire my_fb,send_pix, my_sp, sp_left, sp_right, sp_down;
     reg pixel_border_1, pixel_border_3 = 0;
     wire [6:0] x_coord; //x-coordinate
     wire [6:0] y_coord; //y-coodinate

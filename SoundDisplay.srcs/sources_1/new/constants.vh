@@ -3,6 +3,7 @@
 // Screen dimmensions
 `define WIDTH 96
 `define HEIGHT 64
+
 // Colors
 `define BLACK 16'b0
 `define WHITE ~`BLACK
@@ -15,6 +16,8 @@
 `define ORANGE 16'b11111_100110_00000
 `define GREY 16'b01100_011000_01100
 `define NUS_BLUE 16'b01110_011010_11111
+`define DARK_MODE 16'b00100_00111_00100
+`define MAROON 16'b10011_000000_00000
 
 
 // Bit numbers for various

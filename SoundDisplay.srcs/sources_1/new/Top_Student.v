@@ -20,7 +20,7 @@ module Top_Student (
     output J_MIC3_Pin4,    // Connect to this signal from Audio_Capture.v
     
     //switches & buttons
-    input [15:0] sw, input BTNC, BTNL, BTNR, BTND,
+    input [15:0] sw, input BTNC, BTNL, BTNR, BTND,BTNU,
     //task2a
     input CLOCK,
     output reg [15:0] led,
@@ -46,13 +46,14 @@ module Top_Student (
          
     //CLOCKS & SINGLE PULSE
     wire clk_20k, sixp25clk;
-    wire my_sp, sp_left, sp_right, sp_down; 
+    wire my_sp, sp_left, sp_right, sp_down, sp_up;
     
     clock_divider sixp25mhz (CLOCK, 7, sixp25clk); 
     single_pulse_circuit pulse (BTNC, CLOCK, my_sp);
     single_pulse_circuit pulse_left (BTNL, CLOCK, sp_left);
     single_pulse_circuit pulse_right (BTNR, CLOCK, sp_right);
     single_pulse_circuit pulse_down (BTND, CLOCK, sp_down);
+    single_pulse_circuit pulse_up (BTNU, CLOCK, sp_up);
     
     //AUDIO INSTANCE
          task_2a myaudio(
@@ -86,13 +87,19 @@ module Top_Student (
          
         //TASK 2A,B (VOLUME BAR DISPLAY) 
         volume_bar bar (.mic_in(mic_in_oled), .peak_volume(peak_volume_display), .my_pix_index(my_pix_index), .CLOCK(CLOCK), 
-        .BTNC(BTNC), .BTNL(BTNL), .BTNR(BTNR), .BTND(BTND), .theme_swap(sw[15]), .border_swap(sw[14]), .border_on(sw[13]), 
+        .my_sp(my_sp), .sp_left(sp_left), .sp_right(sp_right), .sp_down(sp_down), .theme_swap(sw[15]), .border_swap(sw[14]), .border_on(sw[13]), 
         .volume_on(sw[12]), .sw_mic_peak(sw[1]), .volume_bar_data(volume_bar_data));
         
+        //FUNCTION: MENU UI
+        wire [15:0] menu_data;
+        wire [3:0] app_state;
+        menu_UI menu (.my_pix_index(my_pix_index), .CLOCK(CLOCK), .BTNU(sp_up), .reset(sw[11]), .app_state(app_state),// input BTNC, BTNL, BTNR, BTND, BTNU, 
+        .menu_data(menu_data));
+        
         //FUNCTION: ALIOTO BITMAP 
-        bitmap_1 alioto (CLOCK, my_pix_index, alioto_data);
+        //bitmap_1 alioto (CLOCK, my_pix_index, alioto_data);
         
         //DISPLAY CONTROL MODULE
-        function_displayer fn (CLOCK, sw[11], volume_bar_data, alioto_data, my_oled_data);
+        function_displayer fn (CLOCK, app_state, volume_bar_data, menu_data, my_oled_data);
     
 endmodule
